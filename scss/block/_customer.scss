@@ -1,0 +1,54 @@
+.customer{
+    margin-top: 60px;
+    width: 100%;
+    &__wrapper{
+        width: 100%;
+        gap: 50px;
+        .owl-carousel{
+            gap: 50px;
+
+        }
+
+    }
+    &__cards{
+        width: 400px;
+        height: 230px;  
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        margin-left: 30px;
+        transition: .8s;
+        &:hover{
+            border: 2px solid #F53838
+        }
+        .item{
+            display: flex;
+        }
+    }
+    &__logo{
+        display: flex;
+        gap: 20px;
+.customer__title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:5px ;
+    p:nth-child(1){
+        font-size: 20px;
+        color: 
+        #0B132A;
+    }
+
+    p:nth-child(2){
+       color:  #4F5665;
+    }
+}
+}
+&__stars{
+    display: flex;
+    align-items: center;
+}
+}

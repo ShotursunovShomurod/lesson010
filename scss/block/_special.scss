@@ -1,0 +1,92 @@
+.special{
+    width: 100%;
+    margin-top: 50px;
+.special__wrapper{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    padding: 60px 70px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    .special__context{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p:nth-child(1){
+            font-size: 35px;
+            color: 
+            #0B132A;
+max-width: 350px;
+        }
+        p:nth-child(2){
+          color:  #4F5665; 
+        }
+    }
+    .special__btn{
+        .button {
+            cursor: pointer;
+            position: relative;
+            padding: 10px 0;
+            font-size: 18px;
+            color: rgb(193, 163, 98);
+            border: 2px solid rgb(193, 163, 98);
+            border-radius: 34px;
+            background-color: transparent;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+            overflow: hidden;
+          }
+          
+          .button::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            border-radius: inherit;
+            scale: 0;
+            z-index: -1;
+            background-color: rgb(193, 163, 98);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+          }
+          
+          .button:hover::before {
+            scale: 3;
+          }
+          
+          .button:hover {
+            color: #212121;
+            scale: 1.1;
+            box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+          }
+          
+          .button:active {
+            scale: 1;   
+          }
+          
+          
+          
+    }
+}
+}
+
+@media(max-width:520px){
+.special{
+    .special__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .special__context{
+            p:nth-child(1){
+                font-size: 22px;
+            }
+            p:nth-child(2){
+                font-size: 16px;
+            }
+        }
+    }
+}
+}

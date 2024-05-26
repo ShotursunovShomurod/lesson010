@@ -1,0 +1,204 @@
+.choose {
+    width: 100%;
+    margin-top: 80px;
+    background: #fbfbfb;
+        // padding: 0 80px;
+    &__wrapper {
+      width: 100%;
+    }
+    &__context {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      p:nth-child(1) {
+        font-size: 35px;
+        color: #0b132a;
+      }
+      p:nth-child(2) {
+        color: #4f5665;
+        max-width: 550px;
+        text-align: center;
+      }
+    }
+    &__block {
+      width: 100%;
+      display: flex;
+      gap: 50px;
+    }
+    &__cards {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      border: 2px solid #dddddd;
+      border-radius: 10px;
+      padding: 80px 0;
+      gap: 30px;
+      transition: 0.8s;
+      &:hover {
+        border: 2px solid #f53838;
+      }
+    }
+    &__img {
+      color: #0b132a;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .image {
+        width: 24px;
+        height: 24px;
+      }
+      p {
+        margin-top: 30px;
+        font-weight: 900;
+        color: #0b132a;
+      }
+    }
+    &__title {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+      p {
+        font-size: 25px;
+        color: #0b132a;
+        font-weight: bold;
+      }
+      .btn {
+        width: 147px;
+        padding: 1.1em 2em;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        color: #131313;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #ecd448;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+      }
+  
+      .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-150%, -50%);
+        transition: all 0.5s;
+      }
+  
+      .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+      }
+  
+      .btn:hover::before {
+        transform: skewX(30deg) translate(150%, -50%);
+        transition-delay: 0.1s;
+      }
+  
+      .btn:active {
+        transform: scale(0.9);
+      }
+    }
+}
+
+
+@media(max-width:990px){
+.choose{
+    .choose__wrapper{
+        .choose__block{
+            display: flex;
+            flex-wrap: wrap;
+.choose__cards{
+    width: 46%;
+}
+        }
+    }
+}
+}
+@media(max-width:833px){
+    .choose{
+        .choose__wrapper{
+            .choose__block{
+                .choose__block{
+                    display: flex;
+                    flex-direction: column;
+                    .choose__cards{
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:670px){
+    .choose{
+        .choose__wrapper{
+            .choose__block{
+                .choose__img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .choose__title{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:580px){
+   .choose{
+    .choose__wrapper{
+        .choose__block{
+            .choose__btn{
+                p{
+                    font-size: 18px;
+                }
+                button{
+                    width: 90px;
+                    
+                }
+            }
+        }
+    }
+   } 
+}
+@media(max-width:480px){
+   .choose{
+    .choose__wrapper{
+        .choose__block{
+            margin-top: 30px;
+            .choose__cards{
+                margin: auto;
+            }
+        }
+        .choose__context{
+            p:nth-child(1){
+                font-size: 20px;
+            }
+            p:nth-child(2){
+                font-size: 10px;
+            }
+        }
+    }
+   } 
+}
